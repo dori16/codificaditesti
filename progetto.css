@@ -1,0 +1,378 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+
+
+.header {
+    padding-block: 2%;
+}
+
+
+h1 {
+    color:rgb(144, 53, 53);
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 {
+    color:rgb(144, 53, 53);
+    font-size: 40px;
+}
+
+h3 {
+    color:rgb(163, 93, 93);
+    font-size: 28px;
+}
+
+h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* MENU */
+
+.ULmenu {
+    text-align: center;
+}
+
+#MENU li {
+    list-style-type: none;
+    margin-left: 25px;
+    display: inline;
+}
+
+#MENU {
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    background-color:rgb(163, 93, 93);
+    width: 100%; 
+    z-index: 1000;
+}
+
+#MENU a {
+    display: inline-block;
+    color: #ffffff;
+    background-color:rgb(163, 93, 93);
+    text-align:center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#MENU a:hover {
+    background-color: rgb(215, 160, 160);
+    border-radius: 0%;
+}
+
+
+/* INFORMAZIONI */
+
+#info h2 {
+    text-align: center;
+}
+
+#info {
+    margin:125px;
+    padding: 30px;
+    border-radius: 10%;
+    border-block: 10px solid rgb(215, 160, 160);
+    
+}
+
+#info1 {
+    margin:25px;
+    padding: 30px;
+    text-align: center;
+    border: 10px solid rgb(91, 78, 78);
+    background-color: rgba(210, 206, 206, 0.277);
+    box-shadow: 0 7px 10px 0 rgba(224, 196, 196, 0.229);
+}
+
+#info2{
+    margin:30px;
+    padding:30px;
+    border-right: 10px solid rgb(215, 160, 160);
+    border-left: 10px solid rgb(215, 160, 160);
+}
+
+#info3 {
+    margin:30px;
+    padding: 30px;
+    border-top:10px solid rgb(107, 97, 97);
+    border-bottom: 10px solid rgb(107, 97, 97);
+    background-color: rgba(210, 206, 206, 0.277);
+    box-shadow: 0 7px 10px 0 rgba(224, 196, 196, 0.229);
+}
+
+
+/* SEZIONE FOTOGRAFIE PAGINE */
+
+#fotoPagine h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+#fotoPagine {
+    margin:55px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px 0 rgba(133, 74, 74, 0.229);
+    background-color: rgba(210, 206, 206, 0.277);
+}
+
+#fotoP {
+    text-align: center;
+}
+
+img {
+    width:600px;
+    padding:40px;
+}
+
+/* BOTTONI PAGINE */
+
+#bottoni {
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+#bottoni h2 {
+    text-align: center;
+}
+
+#cancellazioni, #aggiunte, #abbreviazioni, #termini, #esLinguistico, #normalizzazione, #inserimento {
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px 20px;
+    margin: 10px;
+}
+
+#cancellazioni:hover, #aggiunte:hover, #abbreviazioni:hover, #termini:hover, #esLinguistico:hover, #normalizzazione:hover, #inserimento:hover {
+    opacity: 0.6;
+}
+
+#cancellazioni {
+    background-color: #e3cba4;
+}
+
+#aggiunte {
+    background-color: rgb(123, 123, 213);
+}
+
+#abbreviazioni {
+    background-color:rgb(241, 147, 147);
+}
+
+#termini {
+    background-color: rgb(233, 233, 159);
+}
+
+#esLinguistico {
+    background-color: rgb(125, 195, 203);
+}
+
+#normalizzazione {
+    background-color: rgb(143, 206, 143);
+}
+
+#inserimento {
+    background-color: rgb(251, 188, 110);
+}
+
+
+/*  PAGINE */
+
+#pIniziale {
+    margin-top: 325px;
+    margin-bottom: 325px;
+}
+
+.pag h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.titolo {
+    font-size: 24px;
+    color:rgb(176, 122, 122);
+}
+
+.trascrizione {
+    display: flex;
+    margin: 55px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px 0 rgba(133, 74, 74, 0.229);
+    background-color: rgba(210, 206, 206, 0.277);
+}
+
+.text {
+    margin: 50px;
+    padding: 30px;
+    text-align: justify;
+}
+
+#trad {
+    width: 390px;
+    padding: 30px;
+    margin: 55px;
+} 
+
+
+
+
+/* TERMINOLOGIA */
+
+#bottoniGloss, #Gloss h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#glossario {
+    text-align: center;
+    border-radius: 10px;
+    color:whitesmoke;
+    background-color: rgb(176, 116, 142);
+    margin: 8px;
+    border: none;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+#glossario:hover {
+    opacity: 0.6;
+}
+
+.termGlossario:target {
+    font-style: oblique;
+    text-decoration: underline;
+    text-decoration-color: rgba(121, 21, 37, 0.453);
+}
+
+#Gloss {
+    margin:55px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px 0 rgba(133, 74, 74, 0.229);
+    background-color: rgba(210, 206, 206, 0.277);
+}
+
+
+/* BIBLIOGRAFIA */
+
+#bibl {
+    margin:30px;
+    padding:30px;
+    border: 10px solid rgb(107, 97, 97);
+    background-color: rgba(210, 206, 206, 0.277);
+    box-shadow: 0 7px 10px 0 rgba(193, 185, 185, 0.723);
+    border-radius: 5px;
+}
+
+.bibliografia li {
+    list-style-type: none;
+}
+
+#footer li{
+    text-align: center;
+    margin: 25px;
+    list-style-type: none;
+}
+
+#footer h2{
+    text-align: center;
+}
+
+#foot {
+    margin: 50px;
+}
+
+/* FUNZIONAMENTO BOTTONI */
+
+.reg, .del, .expan, .none, .supplied, .surplus, .sic {
+    display: none;
+}
+
+.head {
+    display:inline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line_through, .inline_block, .a, .f, .t, .add, .o, .head {
+    display: inline-block;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.del {
+    text-decoration: line-through;
+    background-color: #e3cba4;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#add, .a {
+    border-radius: 10px;
+    background-color: rgb(123, 123, 213);
+    margin:7px;
+    padding:5px;
+}
+
+.expan {
+    background-color: rgb(241, 147, 147);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.term a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#term, .t {
+    background-color: rgb(233, 233, 159);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+#foreign, .f {
+    background-color:rgb(125, 195, 203);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.reg {
+    background-color: rgb(143, 206, 143);
+    margin:5px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.supplied {
+    background-color: rgb(251, 188, 110);
+    margin:5px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
