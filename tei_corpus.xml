@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="progetto.xsl"?>
+<!-- schema xml TEI all'url https://tei-c.org/Vault/P5/4.4.0/xml/tei/schema/dtd/ -->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- prologo in cui si trova l'url della dtd -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <!-- descrizione file -->
+
+      <titleStmt>
+        <!-- raggruppa informazioni sul titolo, 'main' si riferisce a quello principale mentre 'alt' a quello tradotto -->
+        <title xml:lang="fr" type="main"> Morphologie </title>
+        <title xml:lang="it" type="alt"> Morfologia </title>
+        <author ref="#FDS">Ferdinand De Saussure (1857-1913)</author>
+        <!-- editor?-->
+        <respStmt>
+          <!-- Responsabilità del contenuto -->
+          <resp>Traduzione effettuata da:</resp>
+          <name xml:id="EF">Emanuele Fadda</name>
+        </respStmt>
+      </titleStmt>
+
+      <!-- (dichiarazione sull'edizione) raggruppa le informazioni riguardo una edizione di un testo. -->
+      <editionStmt>
+        <!-- indica la nuova edizione prodotta, quella digitale -->
+        <edition>
+          Edizione Digitale - <date when="2023">Gennaio 2023</date>.
+        </edition>
+
+        <!-- dichiarazione di responsabilità -->
+        <respStmt>
+          <resp>Progetto sotto la guida di </resp>
+          <name xml:id= "AMDG">Angelo Mario Del Grosso</name>
+        </respStmt>
+
+        <respStmt>
+          <resp>Codifica del file realizzata da</resp>
+          <name xml:id= "IA"> Isidoro Allegretti </name>
+          <name xml:id= "CR">Clara Reynolds</name>
+        </respStmt>
+      </editionStmt>
+
+      <!-- insieme di informazioni sulla pubblicazione -->
+      <publicationStmt>
+        <publisher>Università di Pisa</publisher>
+        <!-- luogo della pubblicazione -->
+        <pubPlace ref="#PI">Pisa, PI</pubPlace>
+        <address>
+          <postCode>56127</postCode>
+          <name>Italia</name>
+        </address>
+        <!-- informazioni sulla disponibilità di un testo -->
+        <availability status="free"> 
+          <p>Opera ad accesso libero</p>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+
+      <!-- contiene una descrizione di un singolo manoscritto identificabile o di un altro oggetto contenente testo, ad esempio un libro stampato in precedenza. -->
+      <sourceDesc>
+        <!-- descrizione dettagliata del manoscritto -->
+        <msDesc>
+          <!-- identificazione del manoscritto -->
+          <msIdentifier> 
+            <placeName>           
+              <country key="CH"> Svizzera </country>
+              <!-- informazioni sulla città -->
+              <settlement ref="#ginevra"> Ginevra </settlement>
+            </placeName>
+            <!-- dove si trova il manoscritto -->
+            <repository role="library">
+              Biblioteca di
+              <placeName ref="#ginevra"> Ginevra </placeName>
+              <!-- numero di identificazione del manoscritto -->
+            </repository>
+            <idno>BGE Ms. fr. 3951/7 pp. 1-24</idno>
+          </msIdentifier>
+
+          <!-- descrizione del contenuto intellettuale del manoscritto -->
+          <msContents>
+            <msItem>
+              <title xml:lang="fr" type="main"> Morphologie </title>
+              <docAuthor ref="#FDS"> Ferdinand de Saussure</docAuthor>
+              <textLang mainLang="fr"> Scritto in lingua francese </textLang>
+              <!-- data del manoscritto -->
+              <docImprint>
+                <pubPlace ref="#ginevra"> Ginevra </pubPlace><docDate>Senza data</docDate>
+              </docImprint>
+            </msItem>
+          </msContents>
+
+          <!-- descrizione fisica e dimensioni del documento -->
+          <physDesc>
+            <!-- descrizione componenti fisiche manoscritto -->
+            <objectDesc form="folio">
+              <supportDesc material="paper" source="https://archives.bge-geneve.ch/ark:/17786/vta9cfd3fc17efc113d">
+                <support>Fogli di carta</support>
+                <!-- descrizione grandezza del documento -->
+                <extent>19 fogli</extent>
+                <!-- descrizione condizioni del documento -->
+                <condition>
+                  <p> Le condizioni del manoscritto risultano piuttosto buone nonostante alcune parti dei fogli siano strappate.</p>
+                </condition>
+              </supportDesc>
+              <layoutDesc>
+                <!-- Specifica il numero di righe per colonna -->
+                <layout columns="1" ruledLines="25 30">
+                  <p>Le pagine hanno dalle 25 alle 30 righe</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+
+            <!-- Chi ha messo mano (chi ha scritto) sul documento -->
+            <handDesc hands="1">
+              <p>Preso dagli archivi di <persName ref="#FDS">Ferdinand de Saussure,</persName> il testo è scritto interamente da lui.</p>
+            </handDesc>
+            <!-- contiene una descrizione dei caratteri tipografici o di altri aspetti di una fonte stampata. -->
+            <typeDesc>
+              <p>La scrittura è in corsivo, si presentano numerose cancellature, alcune parole sono state ricalcate oppure aggiunte sulla parte sinistra del foglio. </p>
+            </typeDesc>
+          </physDesc>
+
+          <!-- descrizione della storia del manoscritto -->
+          <history>
+            <origin notAfter="1895">
+              <p>Gli appunti, scritti da <persName ref="#FDS">Ferdinand de Saussure</persName>
+                fanno parte di un testo preparatorio per almeno tre lezioni destinate a studenti.</p> 
+              <p>Si pensa che appartengano al periodo <date when="1893">1893</date>-<date when="1894">1894</date>, 
+                ma potrebbero anche essere del <date when="1894">1894</date>-<date when="1895">1895</date>.</p>
+            </origin>
+            <acquisition>
+              <p>Il documento originale è tratto dalla Biblioteca di <placeName ref="#ginevra">Ginevra</placeName>.
+              </p>
+            </acquisition>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+
+    <!-- descrizione del profilo del testo (linguaggi primari e secondari in particolare)-->
+    <profileDesc>
+      <!-- linguaggio utilizzato nel documento: descrive lingue, registri, dialetti che vengono rappresentati nel testo  -->
+      <langUsage>
+        <language ident="fr">Francese</language>
+      </langUsage>
+      <!-- (descrizione del testo) fornisce la descrizione di un testo in termini di paramentri situazionali -->
+      <textDesc>
+        <!-- (canale primario) descrive il mezzo o canale attraverso cui un testo è trasmesso o vissuto. 
+        Per un testo scritto potrebbe essere stampa, manoscritto, email, ecc.; per un testo parlato potrebbe essere 
+        radio, telefono, faccia a faccia, ecc.  WS = scritto per essere parlato -->
+        <channel mode="ws" />
+        <!-- descrive la composizione interna di un testo o di un campione di testo, ad esempio frammentario, completo. Single = un unico testo completo [Valore di default]-->
+        <constitution type="single" />
+        <!-- descrive il grado di originalità del testo (original = testo originale)-->
+        <derivation type="original" />
+        <!-- descrive il contesto sociale in cui il testo è realizzato o per il quale è destinato -->
+        <domain type="education" />
+        <!-- (factuality) quantifica quanto il testo possa essere considerato di invenzione o meno. Fact = vero, testo informativo -->
+        <factuality type="fact" />
+        <!-- Interazione. Partial = qualche grado di interazione, ad esempio un monologo con risposte stabilite.
+        Singular = un singolo partecipante attivo, Group = il testo è indirizzato ad un numero indefinito, ma limitato di partecipanti, ad esempio una lezione
+        'active' specifica il numero di partecipanti che producono il testo 
+        'passive' specifica i partecipanti passivi -->
+        <interaction type="none" active="singular" passive="group" />
+        <!-- Preparazione: bozza -->
+        <preparedness type="draft" />
+        <!-- purpose indica la funzione comunicativa del testo -->
+        <purpose type="inform" degree="high" />
+      </textDesc>
+
+      <!-- Descrive lo scenario in cui ha luogo l'interazione linguistica -->
+      <settingDesc>
+        <!-- descrive il luogo dell'interazione -->
+        <setting>
+          <name> Testi registrati nella Biblioteca di
+            <!-- nome del luogo -->
+            <placeName ref="#GN">Ginevra</placeName>, 
+            <country key="CH">Svizzera</country>.
+          </name>
+          <time>
+            <!-- data in qualsiasi formato -->
+            <date when="no-date"> Senza data </date>
+          </time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+
+
+
+
+  <!-- mappatura zone immagine 16-->
+  <facsimile>
+    <surface n="1" xml:id="M_16">
+        <graphic url='p0.png' xml:id="Pag16" width='2521px' height='3758px' />
+        <zone ulx="915" uly="96" lrx="2357" lry="166" rendition="line" xml:id="P16_R1"/>
+        <zone ulx="1263" uly="202" lrx="1872" lry="265" rendition="line" xml:id="P16_R2" />
+        <zone ulx="566" uly="360" lrx="1911" lry="437" rendition="line" xml:id="P16_R3" />
+        <zone ulx="626" uly="508" lrx="2470" lry="566" rendition="line" xml:id="P16_R4" />
+        <zone ulx="540" uly="633" lrx="2439" lry="699" rendition="line" xml:id="P16_R5" />
+        <zone ulx="680" uly="737" lrx="1390" lry="827" rendition="line" xml:id="P16_R6" />
+        <zone ulx="675" uly="874" lrx="2479" lry="925" rendition="line" xml:id="P16_R7" />
+        <zone ulx="588" uly="980" lrx="2405" lry="1034" rendition="line" xml:id="P16_R8" />
+        <zone ulx="221" uly="1108" lrx="2241" lry="1161" rendition="line" xml:id="P16_R9" />
+        <zone ulx="416" uly="1238" lrx="2478" lry="1302" rendition="line" xml:id="P16_R10" />
+        <zone ulx="695" uly="1354" lrx="2447" lry="1399" rendition="line" xml:id="P16_R11" />
+        <zone ulx="669" uly="1499" lrx="2449" lry="1539" rendition="line" xml:id="P16_R12" />
+        <zone ulx="722" uly="1628" lrx="2436" lry="1644" rendition="line" xml:id="P16_R13" />
+        <zone ulx="733" uly="1738" lrx="2464" lry="1786" rendition="line" xml:id="P16_R14" />
+        <zone ulx="740" uly="1829" lrx="2339" lry="1992" rendition="line" xml:id="P16_R15" />
+        <zone ulx="514" uly="2056" lrx="2472" lry="2148" rendition="line" xml:id="P16_R16" />
+        <zone ulx="229" uly="2219" lrx="2461" lry="2264" rendition="line" xml:id="P16_R17" />
+        <zone ulx="653" uly="2343" lrx="2470" lry="2411" rendition="line" xml:id="P16_R18" />
+        <zone ulx="697" uly="2487" lrx="2406" lry="2491" rendition="line" xml:id="P16_R19" />
+        <zone ulx="667" uly="2576" lrx="2408" lry="2611" rendition="line" xml:id="P16_R20" />
+        <zone ulx="200" uly="2692" lrx="2365" lry="2716" rendition="line" xml:id="P16_R21" />
+        <zone ulx="770" uly="2799" lrx="2464" lry="2843" rendition="line" xml:id="P16_R22" />
+        <zone ulx="221" uly="2920" lrx="2401" lry="2953" rendition="line" xml:id="P16_R23" />
+        <zone ulx="737" uly="3026" lrx="2411" lry="3044" rendition="line" xml:id="P16_R24" />
+        <zone ulx="751" uly="3151" lrx="2468" lry="3232" rendition="line" xml:id="P16_R25" />
+        <zone ulx="821" uly="3253" lrx="1394" lry="3320" rendition="line" xml:id="P16_R26" />
+        <zone ulx="978" uly="3341" lrx="2450" lry="3401" rendition="line" xml:id="P16_R27" />
+        <zone ulx="793" uly="3464" lrx="2444" lry="3502" rendition="line" xml:id="P16_R28" />
+        <zone ulx="787" uly="3569" lrx="2454" lry="3616" rendition="line" xml:id="P16_R29" />
+        <zone ulx="802" uly="3650" lrx="2449" lry="3728" rendition="line" xml:id="P16_R30" />
+        </surface>
+
+
+
+
+
+
+
+    <!-- mappatura immagine 17-->
+    <surface n="2" xml:id="M_17">
+      <graphic url='p1.png' xml:id="Pag17" width='2499px' height='3758px' />
+      <zone ulx="429" uly="146" lrx="2200" lry="240" rendition="line" xml:id="P17_R1"/>
+      <zone ulx="460" uly="279" lrx="2186" lry="336" rendition="line" xml:id="P17_R2"/>
+      <zone ulx="869" uly="369" lrx="2370" lry="433" rendition="line" xml:id="P17_R3"/>
+      <zone ulx="760" uly="438" lrx="2360" lry="515" rendition="line" xml:id="P17_R4"/>
+      <zone ulx="649" uly="531" lrx="2242" lry="600" rendition="line" xml:id="P17_R5"/>
+      <zone ulx="503" uly="670" lrx="2310" lry="716" rendition="line" xml:id="P17_R6"/>
+      <zone ulx="545" uly="779" lrx="2349" lry="847" rendition="line" xml:id="P17_R7"/>
+      <zone ulx="552" uly="880" lrx="2386" lry="956" rendition="line" xml:id="P17_R8"/>
+      <zone ulx="717" uly="983" lrx="2352" lry="1119" rendition="line" xml:id="P17_R9"/>
+      <zone ulx="105" uly="1096" lrx="2310" lry="1213" rendition="line" xml:id="P17_R10"/>
+      <zone ulx="46" uly="1253" lrx="2283" lry="1345" rendition="line" xml:id="P17_R11"/>
+      <zone ulx="515" uly="1358" lrx="2291" lry="1408" rendition="line" xml:id="P17_R12"/>
+      <zone ulx="560" uly="1468" lrx="2330" lry="1514" rendition="line" xml:id="P17_R13"/>
+      <zone ulx="206" uly="1589" lrx="2351" lry="1639" rendition="line" xml:id="P17_R14"/>
+      <zone ulx="573" uly="1723" lrx="2388" lry="1765" rendition="line" xml:id="P17_R15"/>
+      <zone ulx="680" uly="1824" lrx="2363" lry="1860" rendition="line" xml:id="P17_R16"/>
+      <zone ulx="632" uly="1947" lrx="2246" lry="1980" rendition="line" xml:id="P17_R17"/>
+      <zone ulx="675" uly="2061" lrx="2370" lry="2072" rendition="line" xml:id="P17_R18"/>
+      <zone ulx="203" uly="2157" lrx="2383" lry="2222" rendition="line" xml:id="P17_R19"/>
+      <zone ulx="340" uly="2306" lrx="2352" lry="2334" rendition="line" xml:id="P17_R20"/>
+      <zone ulx="711" uly="2394" lrx="1443" lry="2494" rendition="line" xml:id="P17_R21"/>
+      <zone ulx="806" uly="2540" lrx="2292" lry="2617" rendition="line" xml:id="P17_R22"/>
+      <zone ulx="440" uly="2689" lrx="2370" lry="2755" rendition="line" xml:id="P17_R23"/>
+      <zone ulx="506" uly="2830" lrx="2361" lry="2889" rendition="line" xml:id="P17_R24"/>
+      <zone ulx="527" uly="2955" lrx="2307" lry="3035" rendition="line" xml:id="P17_R25"/>
+      <zone ulx="565" uly="3094" lrx="2290" lry="3124" rendition="line" xml:id="P17_R26"/>
+      <zone ulx="211" uly="3179" lrx="2283" lry="3284" rendition="line" xml:id="P17_R27"/>
+      <zone ulx="613" uly="3325" lrx="1298" lry="3440" rendition="line" xml:id="P17_R28"/>
+    </surface>
+  </facsimile>
+  
+
+  <!-- contiene un testo intero -->
+  <text xml:lang="fr" xml:id="morfologia-16-17-fr" subtype="manuscript">
+    <body>
+      <div type="trascrizione">
+        <!-- pb = Page Beginning, si riferisce all'inizio della pagina -->
+        <pb n="16" facs="#Pag16"/>
+        <!-- impaginazione -->
+        <fw type="pageNum" rend="margin-left">16</fw>
+        <!-- 'lb' si riferisce alla riga da codificare -->
+        <lb xml:id="morfologia-16-LB1" n="1" facs="#P16-R1"/>
+        <head place="center"> 
+          § <num type="cardinal"> 5 </num>. La 
+          <term ref="#MH">morphologie 
+            <choice>
+              <abbr type="suspension">historiq<am>.</am></abbr>
+              <expan>historiq<ex>ue</ex></expan>
+            </choice> 
+          </term>. Le 
+          <term ref="#CM"> changement
+
+          <lb xml:id="morfologia-16-LB2" n="2" facs="#P16-R2"/>
+            <hi rend="underline,center"> morphologique</hi>
+          </term>.
+        </head>
+
+        <!-- contiene le pericopi -->
+        <ab type="pericope" n="1" xml:id="morfologia-16-per1">
+          <lb xml:id="morfologia-16-LB3" n="3" facs="#P16-R3"/>
+          <del hand="#FDS" rend="overstrike"> La morphologie historique,
+            <gap reason="cancelled" atLeast="6" atMost="7" unit="chars"/>
+          </del>
+
+          <lb xml:id="morfologia-16-LB4" n="4" facs="#P16-R4"/>
+          <del hand="#FDS" rend="overstrike"> quand on fait la
+            <gap reason="cancelled" atLeast="19" atMost="20" unit="chars"/>
+          </del>
+
+          <lb xml:id="morfologia-16-LB5" n="5" facs="#P16-R5"/>
+          <del hand="#FDS" rend="overstrike"> successives, on fait de la morphol.
+            historique.
+          </del>
+
+          <lb xml:id="morfologia-16-LB6" n="6" facs="#P16-R6"/>
+          <del hand="#FDS" rend="overstrike"> Il se
+            <gap reason="cancelled" atLeast="9" atMost="10" unit="chars"/> 
+          </del>
+
+          <lb xml:id="morfologia-16-LB7" n="7" facs="#P16-R7"/>
+          Il ressort <hi rend="underline"> indirectement</hi> du 
+          <ref> § 
+            <num type="cardinal"> 4 </num>
+          </ref> qu'il y a dans 
+          
+          <lb xml:id="morfologia-16-LB8" n="8" facs="#P16-R8"/>
+          la vie du <term ref="#LANG">langage </term> un fait considérable,
+
+          <lb xml:id="morfologia-16-LB9" n="9" facs="#P16-R9"/>
+          <!--'supplied' viene utilizzato quando l'editore aggiunge una parte del testo o in caso di danneggiamento del documento oppure nel caso in cui ci sia una ovvia omissione dell'autore -->
+          <damage atLeast="1" atMost="2" unit="chars"> 
+            <supplied reason="lost-folio">d</supplied>
+          </damage>'
+          <choice><orig>1</orig><reg>une</reg></choice> 
+          <choice>
+            <abbr type="suspension"> import</abbr>
+            <expan> import<ex>ance</ex></expan>
+          </choice>
+          <!-- 'emph' marca una parola con effetto retorico, differenziata rispetto al resto del testo --> 
+          <emph>
+            <choice>
+              <abbr type="suspension">capit<am>.</am></abbr>
+              <expan> capit<ex>ale</ex></expan>
+            </choice>
+          </emph>,
+          qui est le <term ref="#CM"><hi rend="underline">changement morphologique</hi></term>.
+          
+          <lb xml:id="morfologia-16-LB10" n="10" facs="#P16-R10"/>
+          Et que 
+          <choice><orig>L</orig><reg>l</reg></choice>e procédé que 
+          <hi rend="sling-above">
+            <choice><abbr>ns</abbr><expan>nous</expan></choice>
+          </hi> avons appelé <term ref="#MR"><hi rend="underline">morphologie
+
+          <lb xml:id="morfologia-16-LB11" n="11" facs="#P16-R11"/>
+          <choice>
+            <abbr type="suspension"> rétrosp<am>.</am></abbr>
+            <expan> rétrosp<ex>ective </ex></expan>
+          </choice></hi></term>
+          ou <term ref="#ANACR"><hi rend="underline"><choice><abbr type="suspension"> anachroniq<am>.</am></abbr><expan> anachroniq<ex>ue</ex></expan></choice></hi></term>
+          ou <term ref="#ETYM"><hi rend="underline"><choice><abbr type="suspension"> étymologiq<am>.</am></abbr><expan> étymologiq<ex>ue</ex></expan></choice></hi></term>
+
+          <lb xml:id="morfologia-16-LB12" n="12" facs="#P16-R12"/>
+          <del hand="#FDS" rend="overstrike"> a 
+            <gap reason="illegible" atLeast="8" atMost="9" unit="chars"/>
+            pour caractéristique de mé =
+          </del>
+
+          <lb xml:id="morfologia-16-LB13" n="13" facs="#P16-R13"/>
+          <del hand="#FDS" rend="overstrike"> = 
+            <gap reason="illegible" atLeast="22" atMost="23" unit="chars"/>
+            le changement 
+          </del>
+
+          <lb xml:id="morfologia-16-LB14" n="14" facs="#P16-R14"/>
+          <del hand="#FDS" rend="overstrike">morphologiq</del> consiste 
+          <add hand="#FDS" place="above">
+            <choice><abbr>tt</abbr><expan>tout</expan></choice>
+            <choice><abbr type="suspension"> simpl</abbr><expan>simpl<ex>ement</ex></expan></choice>
+          </add>
+          à ériger en <hi rend="sling-below">système</hi>
+
+          <lb xml:id="morfologia-16-LB15" n="15" facs="#P16-R15"/>
+          <choice><orig>L</orig><reg>l</reg></choice>'oubli
+          <add hand="#FDS" place="bottom"> de ce
+            <del hand="#FDS" rend="overtyped">
+              <gap reason="cancelled" atLeast="1" atMost="2" unit="chars"/>
+            </del> 
+            <term ref="#PHEN">
+              <choice><abbr type="suspension">phén<am>.</am></abbr><expan>phén<ex>omène</ex></expan></choice>
+            </term>
+          </add> du 
+          <term ref="#CM"> changement 
+            <choice><abbr type="suspension">morphol<am>.</am></abbr><expan>morphol<ex>ogique</ex></expan></choice>
+          </term>.
+        </ab>
+
+        <ab type="pericope" n="2" xml:id="morfologia-16-per2">
+          <lb xml:id="morfologia-16-LB16" n="16" facs="#P16-R16"/>
+          <del hand="#FDS" rend="overstrike"> La 
+            <gap reason="cancelled" atLeast="17" atMost="18" unit="chars"/>
+          </del> 
+          <retrace>Le</retrace> 
+          <term ref="#CM">changement
+            <choice><abbr type="suspension"> morphologiq<am>.</am></abbr><expan> morphologiq<ex>ue</ex></expan></choice>
+          </term>
+
+          <lb xml:id="morfologia-16-LB17" n="17" facs="#P16-R17"/>
+          <add hand="#FDS" place="margin-left"> nécessite une </add> 
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="1" atMost="2" unit="chars"/>
+          </del>
+          <add hand="#FDS" place="above" rend="sling-above">
+            <term ref="#ET">étude</term> spéciale qui
+          </add> prend le <term ref="#NOM"> nom </term> de 
+          <term ref="#MH">
+            <hi rend="underline">
+              <choice><abbr type="suspension">Morphol<am>.</am></abbr><expan>Morphol<ex>ogie</ex></expan></choice>historique
+            </hi>
+          </term>.
+
+          <lb xml:id="morfologia-16-LB18" n="18" facs="#P16-R18"/>
+          Elle sépare les <term ref="#EPQ">époques </term> et les compare, <hi rend="sling-below">tandis</hi> 
+
+          <lb xml:id="morfologia-16-LB19" n="19" facs="#P16-R19"/>
+          que la 
+          <term ref="#MR"><choice><abbr type="suspension">morp<am>.</am></abbr><expan>morp<ex>hologie</ex></expan></choice> rétrospective</term> les confond.
+
+          <lb xml:id="morfologia-16-LB20" n="20" facs="#P16-R20"/>
+          <!-- 'surplus' identifica una porzione di testo in più tolta dall'editore -->
+          <surplus resp="#EF"><num type="cardinal"> 2 </num></surplus> Elle 
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="5" atMost="6" unit="chars"/>
+          </del>
+          <add hand="#FDS" place="above">
+            <choice><abbr>ns</abbr><expan>nous</expan></choice> présent 
+          </add> 
+          la véritable <term ref="#PER">perspective</term> entre
+            
+          <lb xml:id="morfologia-16-LB21" n="21" facs="#P16-R21"/>
+          les 
+          <add hand="#FDS" place="margin-left"> <term ref="#CLASS"> classifications </term> et 
+            <choice>
+              <abbr type="suspension">l</abbr><expan>les</expan>
+            </choice>
+          </add> interprétations successives
+          <del hand="#FDS" rend="overstrike"> 
+            <gap reason="cancelled" atLeast="3" atMost="4" unit="chars" />
+          </del>
+          <add hand="#FDS" place="above"> axquelles </add> la
+
+          <lb xml:id="morfologia-16-LB22" n="22" facs="#P16-R22"/>
+          <term ref="#LAN"> langue </term> a pu 
+          <add hand="#FDS" place="above">
+            <del rend="overstrike">
+              <gap reason="cancelled" atLeast="7" atMost="8" unit="chars" />
+            </del>
+          </add>
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="9" atMost="10" unit="chars" />
+          </del>
+          <add hand="#FDS" place="above">se<retrace> livrer</retrace> sur les </add> 
+          mêmes <term ref="#FRM">formes</term>,
+
+          <lb xml:id="morfologia-16-LB23" n="23" facs="#P16-R23"/>
+          tandis que la
+          <term ref="#MR">
+            <choice>
+              <abbr type="suspension"> morp<am>.</am></abbr>
+              <expan> morp<ex>hologie</ex></expan>
+            </choice>
+            <choice>
+              <abbr type="suspension">retrosp<am>.</am></abbr>
+              <expan>rétrosp<ex>ective</ex></expan>
+            </choice>
+          </term> cherche
+          <add hand="#FDS" place="margin-left"><supplied>,</supplied> si
+            <choice><abbr> vs</abbr><expan> vous</expan></choice> me permettez cette 
+            <term ref="#IMG"><choice><abbr>img</abbr><expan>image</expan></choice></term>,
+          </add> à
+            
+          <lb xml:id="morfologia-16-LB24" n="24" facs="#P16-R24"/>
+          obtenir la <term ref="#PROJ">projection</term> sur un même
+            
+          <lb xml:id="morfologia-16-LB25" n="25" facs="#P16-R25"/>
+          plan 
+          <del hand="#FDS" rend="overstrike"> des 
+            <gap reason="cancelled" atLeast="19" atMost="20" unit="chars" />
+          </del> 
+          <add hand="#FDS" place="bottom"> de <term ref="#CLASS"> classifications </term></add>
+          très <choice><abbr type="suspension">différ<am>.</am></abbr><expan>différ<ex>entes</ex></expan></choice>
+
+          <lb xml:id="morfologia-16-LB26" n="26" facs="#P16-R26"/>
+          par leur <term ref="#DATA">date</term>.
+        </ab>
+
+        <ab type="pericope" n="3" xml:id="morfologia-16-per3">
+          <lb xml:id="morfologia-16-LB27" n="27" facs="#P16-R27"/>
+          Elle dira que 
+          <choice><abbr type="suspension">d<am>'</am></abbr><expan>d<ex>ans</ex></expan></choice>
+          <foreign xml:lang="gemma"> <hi rend="underline">kalb</hi></foreign><supplied>,</supplied> 
+          <foreign xml:lang="gemma"> <hi rend="underline">kalbir</hi></foreign>, 
+          par suite
+
+          <lb xml:id="morfologia-16-LB28" n="28" facs="#P16-R28"/>
+          de la <term ref="#Modifson"><choice><abbr type="suspension">modif<am>.</am></abbr><expan>modif<ex>ication</ex></expan></choice> du son</term>, 
+          le rapport entre l'<term ref="#ID">idée</term> et le
+
+          <lb xml:id="morfologia-16-LB29" n="29" facs="#P16-R29"/>
+          <term ref="#SON">son</term> est devenu autre que <choice><abbr>ds</abbr><expan>dans</expan></choice> leurs 
+          <term ref="#PROT">
+            <choice>
+              <abbr type="suspension">protot<am>.</am></abbr>
+              <expan>protot<ex>ypes</ex></expan>
+            </choice>
+          </term> 
+          <foreign xml:lang="gemma"><hi rend="underline">kalbiz</hi></foreign> - <foreign xml:lang="gemma" rend="sling-below"><hi rend="underline"><choice><abbr>bizō</abbr><expan>kalbizō</expan></choice></hi></foreign>. 
+
+          <lb xml:id="morfologia-16-LB30" n="30" facs="#P16-R30"/>
+          La 
+          <term ref="#ME">
+            <choice><abbr type="suspension">morp<am>.</am></abbr><expan>morp<ex>hologie</ex></expan></choice>
+            <choice><abbr type="suspension"> étym<am>.</am></abbr><expan> étym<ex>ologique</ex></expan></choice>
+          </term> 
+          ne voit que l'état le <choice><orig>+</orig><reg>plus</reg></choice>
+          <term ref="#PRIM">primitif</term> et  
+
+
+          <!-- Pagina 17 -->
+          <!-- pb = Page Beginning, si riferisce all'inizio della pagina --> 
+          <pb n="17" facs="#PG17Intera" />
+          <!-- intestazione -->
+          <fw type="pageNum" rend="margin-left">17</fw>
+          <!-- lb = Line Beginning, si riferisce alla prima riga della pagina da codificare -->
+          <lb xml:id="morfologia-17-LB1" n="1" facs="#P17-R1"/> 
+          <choice><abbr type="suspension">appliq<am>.</am></abbr><expan>appliq<ex>ue</ex></expan></choice> 
+          impertubablement l'<term ref="#analyse">analyse</term>
+
+          <lb xml:id="morfologia-17-LB2" n="2" facs="#P17-R2"/>
+          du <choice><orig><num type="cardinal">1</num>e</orig><reg>premier</reg></choice> 
+          jour aux <term ref="#period">périodes</term> subséquentes.
+        </ab>
+
+        <ab type="pericope" n="4" xml:id="morfologia-17-per4">
+          <lb xml:id="morfologia-17-LB3" n="3" facs="#P17-R3"/>
+          Pas de fusion possible puisque la 
+          <term ref="#ME">
+            <choice><abbr>morp<am>.</am></abbr><expan>morp<ex>hologie</ex></expan></choice> 
+            <choice><abbr>étymol<am>.</am></abbr><expan>étymol<ex>ogique</ex></expan></choice>
+          </term><surplus resp="#EF">-</surplus>
+
+          <lb xml:id="morfologia-17-LB4" n="4" facs="#P17-R4"/> 
+          <del hand="#FDS" rend="overstrike">Mais</del>est la négation même du 
+          <term ref="#PH">principe <choice><abbr>historiq</abbr><expan>historiq<ex>ue</ex></expan></choice></term>.
+        </ab>
+
+        <ab type="pericope" n="5" xml:id="morfologia-17-per5">
+          <lb xml:id="morfologia-17-LB5" n="5" facs="#P17-R5"/>
+          Voici maintenant la question qui 
+
+          <lb xml:id="morfologia-17-LB6" n="6" facs="#P17-R6"/>
+          ne peut manquer de se poser, si j'ai 
+
+          <lb xml:id="morfologia-17-LB7" n="7" facs="#P17-R7"/>
+          réussi à 
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="2" atMost="3" unit="chars" />
+          </del> 
+          faire suivre 
+          <add hand="#FDS" place="bottom"> le 
+            <choice><abbr>développm</abbr><expan> développement</expan></choice>
+            <supplied> [du présent <term ref="#EXP">exposé</term>]</supplied>
+          </add> depuis le 
+
+          <lb xml:id="morfologia-17-LB8" n="8" facs="#P17-R8"/> 
+          commencement:
+        </ab>
+
+        <ab type="pericope" n="6" xml:id="morfologia-17-per6">
+          <lb xml:id="morfologia-17-LB9" n="9" facs="#P17-R9"/> 
+          Puisqu'il <del hand="#FDS" rend="overstrike"> y a </del>
+          <add hand="#FDS" place="above"> existe </add> un 
+          <term ref="#CM">changement <choice><abbr>morphologiq</abbr><expan>morphologiq<ex>ue</ex></expan></choice></term> 
+
+          <lb xml:id="morfologia-17-LB10" n="10" facs="#P17-R10"/>
+          et une <term ref="#MH">morphologie historique</term><surplus resp="#EF">,</surplus>
+          <add hand="#FDS" place="margin-left" rend="sling-above"> et 
+            <choice><orig><num type="cardinal">1</num></orig><reg>une</reg></choice> succession 
+            <choice><abbr>ds</abbr><expan>dans</expan></choice> les 
+            <term ref="#FATM">faits
+              <choice>
+                <abbr type="suspension"> morp<am>.</am></abbr>
+                <expan> morp<ex>hologiques</ex></expan>
+              </choice>
+            </term>
+          </add>, il est donc 
+
+          <lb xml:id="morfologia-17-LB11" n="11" facs="#P17-R11"/> 
+          faux que  <add hand="#FDS" place="margin-left" rend="sling-above">le jeu des forces</add>
+          <del hand="#FDS" rend="overstrike">les faits</del>
+          <term ref="#morphologique">
+            <choice>
+              <abbr type="suspension"> morphologiq<am>.</am></abbr>
+              <expan> morphologiq<ex>ues</ex></expan>
+            </choice>
+          </term> 
+          <del hand="#FDS" rend="overstrike">mais</del>
+            
+          <lb xml:id="morfologia-17-LB12" n="12" facs="#P17-R12"/>
+          <del hand="#FDS" rend="overstrike">placent 
+            <gap reason="illegible" atLeast="10" atMost="12" unit="chars"/>
+            <add hand="#FDS" place="bottom" rend="sling-below">
+              <gap reason="illegible" atLeast="11" atMost="12" unit="chars"/>
+            </add> en face des 
+          </del>
+            
+          <lb xml:id="morfologia-17-LB13" n="13" facs="#P17-R13"/> 
+          <del hand="#FDS" rend="overstrike">formes</del> 
+            
+          <lb xml:id="morfologia-17-LB14" n="14" facs="#P17-R14"/> 
+          <add hand="#FDS" place="margin-left">s'exerce
+            <del hand="#FDS" rend="overstrike">
+              <gap reason="illegible" atLeast="2" atMost="3" unit="chars"/>
+            </del>
+          </add> 
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="4" atMost="5" unit="chars"/> 
+          </del> constamment et exclusivement  
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="4" atMost="5" unit="chars"/> 
+          </del> 
+            
+          <lb xml:id="morfologia-17-LB15" n="15" facs="#P17-R15"/> 
+          <del hand="#FDS" rend="overstrike">d'une forme</del> entre <term ref="#FRM">formes</term> contemporaines
+          <choice><sic><pc type="interrogative">?</pc></sic><corr>.</corr></choice>
+            
+          <lb xml:id="morfologia-17-LB16" n="16" facs="#P17-R16"/> 
+          Je rappelle en effet qu'au 
+          <ref>paragraphe <surplus resp="#EF"> §</surplus>
+            <choice><orig><num type="cardinal">1</num>er</orig><reg>premier</reg></choice>
+          </ref> nous 
+            
+          <lb xml:id="morfologia-17-LB17" n="17" facs="#P17-R17"/> 
+          posions comme 
+          <choice>
+            <orig><num type="cardinal">1</num></orig>
+            <reg>un</reg>
+          </choice> <term ref="#PRINC">principe</term> de 
+          <choice>
+            <orig><num type="cardinal">1</num>ère</orig>
+            <reg>première</reg>
+          </choice>  
+            
+          <lb xml:id="morfologia-17-LB18" n="18" facs="#P17-R18"/> 
+          importance que <del hand="#FDS" rend="overstrike">faire de la </del><add hand="#FDS" place="above">les faits</add>
+          <term ref="#morphologique">
+            <choice>
+              <abbr> morp<am>.</am></abbr>
+              <expan> morp<ex>hologiques</ex></expan>
+            </choice>
+          </term>
+          <del hand="#FDS" rend="overstrike">c'est</del>
+            
+          <lb xml:id="morfologia-17-LB19" n="19" facs="#P17-R19"/> 
+          <add hand="#FDS" place="margin-left">se passent</add> <del hand="#FDS" rend="overstrike">s'occuper de</del><add hand="#FDS" place="above">entre </add>
+          <term ref="#FRM">formes </term> diverses <choice><orig>&amp;</orig><reg>et</reg></choice><hi rend="underline"><term ref="#SIMUL"> simultanées</term></hi>, 
+            
+          <lb xml:id="morfologia-17-LB20" n="20" facs="#P17-R20"/>  
+          <add hand="#FDS" place="margin-left">les faits</add>
+          <del hand="#FDS" rend="overstrike">
+            <gap reason="cancelled" atLeast="9" atMost="10" unit="chars"/>
+          </del>
+          <term ref="#PHON">
+            <choice>
+              <abbr type="suspension"> phonét<am>.</am></abbr>
+              <expan> phonét<ex>iques</ex></expan>
+            </choice>
+          </term>
+          <del hand="#FDS" rend="overstrike"><gap reason="cancelled" atLeast="12" atMost="13" unit="chars" /></del> <add hand="#FDS" place="above"> entre </add> des <term ref="#FRM">formes</term> 
+            
+          <lb xml:id="morfologia-17-LB21" n="21" facs="#P17-R21"/> 
+          <choice><abbr type="suspension">identiq<am>.</am></abbr><expan>identiq<ex>ues</ex></expan></choice> et successives.
+        </ab>
+            
+        <ab type="pericope" n="7" xml:id="morfologia-17-per7">
+          <lb xml:id="morfologia-17-LB22" n="22" facs="#P17-R22"/> 
+          Il me sera très facile de vous 
+            
+          <lb xml:id="morfologia-17-LB23" n="23" facs="#P17-R23"/> 
+          montrer que ce <term ref="#PRINC">principe</term> n'est pas entamé
+            
+          <lb xml:id="morfologia-17-LB24" n="24" facs="#P17-R24"/> 
+          un seul instant par le fait du 
+            
+          <lb xml:id="morfologia-17-LB25" n="25" facs="#P17-R25"/> 
+          <term ref="#CM">changement morphologique</term>, mais 
+            
+          <lb xml:id="morfologia-17-LB26" n="26" facs="#P17-R26"/> 
+          qu'il en <del hand="#FDS" rend="overstrike"> et </del> reçoit plutôt <del hand="#FDS" rend="overstrike"> une </del>
+            
+          <lb xml:id="morfologia-17-LB27" n="27" facs="#P17-R27"/>  
+          <del hand="#FDS" rend="overstrike"> 
+            <gap reason="cancelled" atLeast="23" atMost="24" unit="chars" />
+          </del>
+          <add hand="#FDS" place="above"> une nouvelle et décisive</add><term ref="#ILL"> illustration</term>.
+            
+          <lb xml:id="morfologia-17-LB28" n="28" facs="#P17-R28"/> 
+          <del hand="#FDS" rend="overstrike"> très précieuse.</del>
+
+        </ab>
+      </div>
+
+
+
+      <!-- Traduzione pagine 16-17 -->
+      <div type="traduzione">
+        <pb n="16" facs="traduzione16" />
+        <head>Terza conferenza.
+        5. La morfologia storica. Il cambiamento morfologico.</head>
+
+        <ab n="1" corresp="morfologia-16-per1" xml:lang="it">
+          Deriva indirettamente dal § 4 che vi è nella vita del linguaggio un fatto considerevole,
+          d’un’importanza capitale, che è il <hi rend="italic">cambiamento morfologico</hi>. E che il procedimento che noi
+          abbiamo chiamato <hi rend="italic">morfologia retrospettiva</hi> o <hi rend="italic">anacronica</hi> o 
+          <hi rend="italic">etimologica</hi> consiste molto semplicemente a erigere a sistema la dimenticanza di 
+          tale fenomeno del cambiamento morfologico.
+        </ab>
+
+    
+        <ab n="2" corresp="morfologia-16-per2" xml:lang="it">
+          Il cambiamento morfologico necessita uno studio speciale, che prende il nome di <hi rend="italic">morfologia
+          storica</hi>. Essa separa le epoche e le mette a confronto, laddove la morfologia retrospettiva le confonde. 
+          Essa rappresenta la vera prospettiva tra le classificazioni e le interpretazioni successive delle stesse forme alle quali
+          la lingua ha potuto addivenire, mentre la morfologia retrospettiva cerca, se mi
+          permettete quest’immagine, d’ottenere la proiezione su uno stesso piano di classificazioni
+          molto diverse per quanto riguarda la loro data.
+        </ab>
+
+
+        <ab n="3" corresp="morfologia-16-per3" xml:lang="it">
+          Essa dirà chi in <hi rend="italic">kalb,
+          kalbir</hi>, in seguito alla modificazione del suono, il rapporto tra l'idea e il suono è 
+          divenuto altro rispetto ai loro prototipi <hi rend="italic">kalbiz, kalbizo</hi>. La morfologia 
+          etimologica non vede se non lo stato più primitivo e 
+
+
+          <!-- Traduzione pagina 17 -->
+          <pb n="17" facs="traduzione17"/>
+          applica imperturbabilmente l’analisi
+          del primo giorno ai periodi susseguenti.
+        </ab>
+          
+        <ab n="4" corresp="morfologia-17-per4" xml:lang="it">
+          Nessuna confusione possibile poiché la
+          morfologia etimologica è la negazione stessa del principio storico.
+        </ab>
+
+        <ab n="5" corresp="morfologia-17-per5" xml:lang="it">
+          Ecco adesso la questione che immancabilmente si pone, se sono riuscito a far 
+          seguire lo sviluppo di quest’[esposizione] dall’inizio.          
+        </ab>
+
+        <ab n="6" corresp="morfologia-17-per6" xml:lang="it">
+          Poiché esiste un cambiamento morfologico, e una morfologia storica, e una
+          successione nei fatti morfologici, è dunque falso dire che il gioco delle forze
+          morfologiche si esercita costantemente ed esclusivamente tra forme contemporanee.
+          Ricordo in effetti che al § 1 noi ponemmo come principio di primaria
+          importanza che i fatti morfologici avvengono tra forme diverse e 
+          <hi rend="italic"> simultanee</hi>, e i fatti fonetici tra forme identiche e successive.
+        </ab>
+
+        <ab n="7" corresp="morfologia-17-per7" xml:lang="it">
+          Mi sarà assai facile mostrarvi che questo principio non è intaccato un solo
+          istante dal fatto del cambiamento morfologico, ma che ne riceve piuttosto una
+          nuova e decisiva illustrazione.
+        </ab>
+      </div>
+    </body>
+    
+
+    <!--Terminologia pagina 16 -->
+    <back>
+      <div type="glossary">
+        <list type="terminology">
+          <!-- morphologie historique -->
+          <label>
+            <term xml:id="MH" xml:lang="fr">Morphologie historique</term>
+            <term ref="#MH" xml:lang="it">Morfologia storica</term>
+          </label>
+          <item>
+            <gloss target="#MH" xml:lang="it" source="https://it.wikipedia.org/wiki/Grammatica_storica"> 
+            La morfologia storica, anche chiamata grammatica storica o grammatica diacronica è
+            la rappresentazione di una lingua nella sua evoluzione nel tempo. La grammatica diacronica prende in considerazione l'intero arco temporale che da un
+            certo stadio della lingua ha portato ad un altro.
+            </gloss>
+          </item>
+
+          <!-- changement morphologique -->
+          <label>
+            <term xml:id="CM" xml:lang="fr">Changement morphologique</term>
+            <term ref="#CM" xml:lang="it">Cambiamento morfologico</term>
+          </label>
+          <item>
+            <gloss target="#CM" xml:lang="it" source="https://it.wikipedia.org/wiki/Cambiamento_linguistico"> I fenomeni
+            del cambiamento morfologico di una lingua sono spesso riconducibili a casi di
+            imperfezione nell'ascolto e nella ripetizione. Le parole più difficili da
+            pronunciare, infatti, vengono modificate per essere rese più semplici. Proprio la
+            semplificazione è uno dei motivi principali che hanno portato avanti il
+            cambiamento: alcuni nessi consonantici e strutture sillabiche più complessi sono
+            modificati per facilitare l’uso della lingua. 
+            </gloss>
+          </item> 
+
+          <!-- langage-->
+          <label>
+            <term xml:id="LANG" xml:lang="fr">Langage</term>
+            <term ref="#LANG" xml:lang="it">Linguaggio</term>
+          </label>
+          <item>
+            <gloss target="#LANG" xml:lang="it" source="https://www.treccani.it/vocabolario/linguaggio/">
+            La lingua è, in senso ampio, la capacità e la facoltà, peculiare degli esseri umani, di comunicare pensieri, esprimere sentimenti
+            per mezzo di un sistema di segni vocali o grafici; è lo strumento stesso di tale espressione e comunicazione.
+            </gloss>
+          </item>
+
+
+
+          <!-- morfologia retrospective-->
+          <label>
+            <term xml:id="MR" xml:lang="fr">Morphologie retrospective</term>
+            <term ref="#MR" xml:lang="it">Morfologia retrospettiva</term>
+          </label>
+          <item>
+            <gloss target="#MR" xml:lang="it" source="https://it.wikipedia.org/wiki/Grammatica_storica">
+            La morfologia retrospettiva anche chiamata grammatica sincronica si concentra sulla lingua in una determinata fase cronologica,
+            descrivendo il sistema di fenomeni esistente in un momento dato, in una certa comunità di parlanti, descrivendo dunque il sistema dei rapporti fra i termini coesistenti 
+            in un determinato stato della lingua. 
+            </gloss>
+          </item>
+
+          <!-- anachronique-->
+          <label>
+            <term xml:id="ANACR" xml:lang="fr">Anachronique</term>
+            <term ref="#ANACR" xml:lang="it">Anacronistico</term>
+          </label>
+          <item>
+            <gloss target="#ANACR" xml:lang="it" source="https://www.treccani.it/vocabolario/anacronismo/">
+            Un anacronismo è un'incoerenza cronologica in una disposizione, in particolare una giustapposizione di persone, 
+            eventi, oggetti, termini linguistici e usanze di diversi periodi di tempo. 
+            </gloss>
+          </item>
+
+          <!-- étymologique-->
+          <label>
+            <term xml:id="ETYM" xml:lang="fr">Étymologique</term>
+            <term ref="#ETYM" xml:lang="it">Etimologico</term>
+          </label>
+          <item>
+            <gloss target="#ETYM" xml:lang="it" source="https://www.treccani.it/vocabolario/etimologia/">
+            Dell’etimologia o delle etimologie, relativo all’etimologia. 
+            Scienza che studia la storia delle parole, indagandone l’origine e l’evoluzione fonetica, morfologica, semantica.
+            </gloss>
+          </item>
+
+          <!-- phenomène-->
+          <label>
+            <term xml:id="PHEN" xml:lang="fr">Phenomène</term>
+            <term ref="#PHEN" xml:lang="it">Fenomeno</term>
+          </label>
+          <item>
+            <gloss target="#PHEN" xml:lang="it" source="https://www.treccani.it/vocabolario/fenomeno/">
+            Nel linguaggio comune il fenomeno è un qualsiasi fatto che si proponga come oggetto di particolare considerazione.
+            </gloss>
+          </item>
+
+          <!--étude -->
+          <label>
+            <term xml:id="ET" xml:lang="fr">Étude</term>
+            <term ref="#ET" xml:lang="it">Studio</term>
+          </label>
+          <item>
+            <gloss target="#ET" xml:lang="it" source="https://www.treccani.it/vocabolario/studiare/">
+            Applicarsi all’apprendimento e all’approfondimento di uno o più campi o settori di conoscenza e di esperienza, o anche di un singolo argomento.
+            </gloss>
+          </item>
+
+          <!-- nom -->
+          <label>
+            <term xml:id="NOM" xml:lang="fr">Nom</term>
+            <term ref="#NOM" xml:lang="it">Nome</term>
+          </label>
+          <item>
+            <gloss target="#NOM" xml:lang="it" source="https://www.treccani.it/vocabolario/nome/">
+            In senso lato, nella grammatica e nella linguistica, ogni parola che segua la flessione detta appunto nominale, cioè la declinazione.
+            </gloss>
+          </item>
+
+          <!-- époques-->
+          <label>
+            <term xml:id="EPQ" xml:lang="fr">Époques</term>
+            <term ref="#EPQ" xml:lang="it">Epoche</term>
+          </label>
+          <item>
+            <gloss target="#EPQ" xml:lang="it" source="https://www.treccani.it/vocabolario/epoca/">
+            Punto fisso nella storia, segnato da qualche avvenimento memorabile, da cui si comincia a contare una nuova serie di anni; o spazio di tempo compreso 
+            fra due di tali punti o momenti della storia.
+            </gloss>
+          </item>
+
+          <!-- perspective-->
+          <label>
+            <term xml:id="PER" xml:lang="fr">Perspective</term>
+            <term ref="#PER" xml:lang="it">Prospettiva</term>
+          </label>
+          <item>
+            <gloss target="#PER" xml:lang="it" source="https://www.treccani.it/vocabolario/prospettiva1/">
+            L’angolazione, il punto di vista da cui viene considerato un fatto, un problema, esaminata o valutata una situazione.
+            </gloss>
+          </item>
+
+          <!-- classifications-->
+          <label>
+            <term xml:id="CLASS" xml:lang="fr">Classifications</term>
+            <term ref="#CLASS" xml:lang="it">Classificazioni</term>
+          </label>
+          <item>
+            <gloss target="#CLASS" xml:lang="it" source="https://www.treccani.it/vocabolario/classificazione/">
+            L’operazione, l’effetto, il modo del classificare; divisione o distribuzione in classi, cioè in categorie.
+            </gloss>
+          </item>
+
+          <!-- langue-->
+          <label>
+            <term xml:id="LAN" xml:lang="fr">Langue</term>
+            <term ref="#LAN" xml:lang="it">Lingua</term>
+          </label>
+          <item>
+            <gloss target="#LAN" xml:lang="it" source="https://it.wikipedia.org/wiki/Lingua_(linguistica)">
+            La lingua è il sistema o forma storicamente determinata attraverso la quale gli appartenenti a una comunità si esprimono e comunicano 
+            tra loro attraverso l'uso di un determinato linguaggio ovvero un insieme di segni scritti (simboli) e/o parlati (suoni).
+            </gloss>
+          </item>
+
+          <!-- formes-->
+          <label>
+            <term xml:id="FRM" xml:lang="fr">Formes</term>
+            <term ref="#FRM" xml:lang="it">Forme</term>
+          </label>
+          <item>
+            <gloss target="#FRM" xml:lang="it" source="https://www.treccani.it/vocabolario/forme/">
+            Semanticamente, corrisponde al suffissoide -morfo (e anche, ma solo parzialmente, a -oide), di origine greca e di uso più tecnico. 
+            </gloss>
+          </item>
+
+          <!-- image-->
+          <label>
+            <term xml:id="IMG" xml:lang="fr">Image</term>
+            <term ref="#IMG" xml:lang="it">Immagine</term>
+          </label>
+          <item>
+            <gloss target="#IMG" xml:lang="it" source="https://www.treccani.it/vocabolario/immagine/">
+            Rappresentazione alla mente di cosa vera o immaginaria, per opera della memoria o della fantasia.
+            </gloss>
+          </item>
+
+          <!--projection-->
+          <label>
+            <term xml:id="PROJ" xml:lang="fr">Projection</term>
+            <term ref="#PROJ" xml:lang="it">Proiezione</term>
+          </label>
+          <item>
+            <gloss target="#PROJ" xml:lang="it" source="https://it.wiktionary.org/wiki/proiezione">
+            Dal latino significa "gettare avanti".
+            </gloss>
+          </item>
+
+          <!--date -->
+          <label>
+            <term xml:id="DATA" xml:lang="fr">Date</term>
+            <term ref="#DATA" xml:lang="it">Data</term>
+          </label>
+          <item>
+            <gloss target="#DATA" xml:lang="it" source="https://it.wikipedia.org/wiki/Data">
+            La data è la convenzione per indicare un giorno specifico in un calendario, una lettera o in un altro documento. 
+            In questo caso si intende datazione ovvero assegnazione della data, accertamento, eseguito mediante l'indagine storica o una serie di ragionamenti induttivi, del tempo in cui un fatto è avvenuto.
+            </gloss>
+          </item>
+
+          <!-- modification du son -->
+          <label>
+            <term xml:id="Modifson" xml:lang="fr">Modification du son</term>
+            <term ref="#Modifson" xml:lang="it">Modificazione del suono</term>
+          </label>
+          <item>
+            <gloss target="#Modifson" xml:lang="it" source="https://it.wikipedia.org/wiki/Cambiamento_linguistico">
+            La modificazione del suono in linguistica è anche definita come mutamento fonetico. 
+            Si parla di mutamento fonetico quando ci si trova di fronte a un cambiamento di abitudine nell'articolare un suono.
+            Il mutamento può essere indipendente (cioè non determinato dal contesto fonetico in cui un suono si presenta) oppure dipendente (cioè determinato dal contesto).
+            </gloss>
+          </item>
+
+          <!-- idée-->
+          <label>
+            <term xml:id="ID" xml:lang="fr">Idée</term>
+            <term ref="#ID" xml:lang="it">Idea</term>
+          </label>
+          <item>
+            <gloss target="#ID" xml:lang="it" source="https://www.treccani.it/vocabolario/idea/">
+            Nel significato più ampio e generico, ogni singolo contenuto del pensiero, ogni entità mentale, e più in particolare la rappresentazione di un oggetto alla mente, 
+            la nozione che la mente si forma o riceve di una cosa reale o immaginaria.
+            </gloss>
+          </item>
+
+          <!-- son-->
+          <label>
+            <term xml:id="SON" xml:lang="fr">Son</term>
+            <term ref="#SON" xml:lang="it">Suono</term>
+          </label>
+          <item>
+            <gloss target="#SON" xml:lang="it" source="https://www.treccani.it/vocabolario/suono/">
+            In linguistica, suono articolato, unità fonico-acustica del linguaggio orale, termine generico, ormai raro e sostituito dai termini specifici come fono in fonetica e fonema in fonologia.
+            </gloss>
+          </item>
+
+          <!-- prototypes-->
+          <label>
+            <term xml:id="PROT" xml:lang="fr">Prototypes</term>
+            <term ref="#PROT" xml:lang="it">Prototipi</term>
+          </label>
+          <item>
+            <gloss target="#PROT" xml:lang="it" source="https://www.treccani.it/vocabolario/prototipo/">
+            In filologia, nella critica letteraria, in storia dell’arte e in archeologia, termine usato talora, ma con significato più generico, come sinonimo di archetipo, 
+            per indicare l’esempio più antico, noto o ricostruito, a cui si può ricondurre una tradizione, un filone narrativo, illustrativo, ecc. 
+            In questo caso si parla della forma antica/arcaica di una parola.
+            </gloss>
+          </item>
+
+          <!-- morphologie étymologique-->
+          <label>
+            <term xml:id="ME" xml:lang="fr">Morphologie étymologique</term>
+            <term ref="#ME" xml:lang="it">Morfologia etimologica</term>
+          </label>
+          <item>
+            <gloss target="#ME" xml:lang="it" source="https://it.wikipedia.org/wiki/Grammatica_storica">
+            In questa pagina del manoscritto il linguista Saussure utilizza il termine morfologia etimologica come sinonimo di morfologia retrospettiva. 
+            Si legga la definizione da noi fornita di 'morfologia retrospettiva'.
+            </gloss>
+          </item>
+
+          <!-- primitif-->
+          <label>
+            <term xml:id="PRIM" xml:lang="fr">Primitif</term>
+            <term ref="#PRIM" xml:lang="it">Primitivo</term>
+          </label>
+          <item>
+            <gloss target="#PRIM" xml:lang="it" source="https://www.treccani.it/vocabolario/primitivo1/">
+            Che è relativo a, o proprio di, un periodo di tempo anteriore a quello attuale.
+            </gloss>
+          </item>
+        
+
+          <!--pag 17-->
+
+          <!--analyse -->
+          <label>
+            <term xml:id="analyse" xml:lang="fr">Analyse</term>
+            <term ref="#analyse" xml:lang="it">Analizzare</term>
+          </label>
+          <item>
+            <gloss target="#analyse" xml:lang="it" source="https://www.treccani.it/vocabolario/analizzare/">
+            Sottoporre ad analisi, scomporre un tutto nelle sue diverse parti per studiarle separatamente.
+            </gloss>
+          </item>
+
+          <!-- périodes -->
+          <label>
+            <term xml:id="period" xml:lang="fr">Périodes</term>
+            <term ref="#period" xml:lang="it">Periodi</term>
+          </label>
+          <item>
+            <gloss target="#period" xml:lang="it" source="https://www.garzantilinguistica.it/ricerca/?q=periodo">
+            Ciascuna delle parti in cui si può dividere la durata di qualcosa.
+            Spazio di tempo che si distingue per tratti caratteristici o per situazioni particolari all’interno di un determinato ciclo.
+            </gloss>
+          </item>
+
+          <!-- principe historique -->
+          <label>
+            <term xml:id="PH" xml:lang="fr">Principe historique</term>
+            <term ref="#PH" xml:lang="it">Principio storico</term>
+          </label>
+          <item>
+            <gloss target="#PH" xml:lang="it" source="https://www.treccani.it/vocabolario/storico/">
+            Nel manoscritto Saussure si riferisce al principio della storia: in senso ampio che ha per oggetto e fine la storia, 
+            intesa come ricerca, descrizione e interpretazione di fatti che hanno una linea di sviluppo nel tempo.
+            </gloss>
+          </item>
+
+          <!--exposé-->
+          <label>
+            <term xml:id="EXP" xml:lang="fr">Exposé</term>
+            <term ref="#EXP" xml:lang="it">Esposizione</term> 
+          </label>
+          <item>
+            <gloss target="#EXP" xml:lang="it" source="https://www.treccani.it/vocabolario/esposizione/">
+            L’esporre, spiegazione, narrazione ordinata: fare un’esposizione dei fatti, di una scienza, di una dottrina.
+            </gloss>
+          </item>
+
+          <!-- faits morphologiques -->
+          <label>
+            <term xml:id="FATM" xml:lang="fr">Faits morphologiques</term>
+            <term ref="#FATM" xml:lang="it">Fatti morfologici</term>
+          </label>
+          <item>
+            <gloss target="#FATM" xml:lang="it" source="https://it.wikipedia.org/wiki/Morfologia_(linguistica)">
+            Nel manoscritto Saussure si riferisce ai vari fenomeni/mutamenti morfologici. 
+            I fenomeni del cambiamento morfologico di una lingua sono spesso riconducibili a casi di imperfezione nell'ascolto e nella ripetizione. 
+            Le parole più difficili da pronunciare, infatti, vengono modificate per essere rese più semplici. Proprio la semplificazione è uno dei motivi principali che 
+            hanno portato avanti il cambiamento: alcuni nessi consonantici e strutture sillabiche più complessi sono modificati per facilitare l’uso della lingua.  
+            </gloss>
+          </item>
+
+          <!--morphologique -->
+          <label>
+            <term xml:id="morphologique" xml:lang="fr">Morphologique</term>
+            <term ref="#morphologique" xml:lang="it">Morfologico</term>
+          </label>
+          <item>
+            <gloss target="#morphologique" xml:lang="it" source="https://www.treccani.it/vocabolario/morfologico/">
+            Che concerne la morfologia o, più genericamente, che si riferisce alla struttura, alla forma.
+            La morfologia è lo studio della flessione, della composizione e derivazione delle parole, della determinazione delle categorie e delle funzioni grammaticali.
+            </gloss>
+          </item>
+
+          <!--principe -->
+          <label>
+            <term xml:id="PRINC" xml:lang="fr">Principe</term>
+            <term ref="#PRINC" xml:lang="it">Principio</term>
+          </label>
+          <item>
+            <gloss target="#PRINC" xml:lang="it" source="https://www.treccani.it/vocabolario/principio/">
+            Concetto, affermazione, enunciato che forma uno dei fondamenti di una dottrina, di una scienza o di una disciplina, di un particolare sistema, 
+            o che, più semplicemente, sta alla base di un ragionamento, di una convinzione.
+            </gloss>
+          </item>
+
+          <!-- simultanées -->
+          <label>
+            <term xml:id="SIMUL" xml:lang="fr">Simultanées</term>
+            <term ref="#SIMUL" xml:lang="it">Simultanee</term>
+          </label>
+          <item>
+            <gloss target="#SIMUL" xml:lang="it" source="https://www.treccani.it/vocabolario/simultaneo/">
+            Che avviene nello stesso momento, che si svolge nello stesso tempo.
+            </gloss>
+          </item>
+
+          <!-- phonetiques  -->
+          <label>
+            <term xml:id="PHON" xml:lang="fr">Phonetiques</term>
+            <term ref="#PHON" xml:lang="it">Fonetici</term>
+          </label>
+          <item>
+            <gloss target="#PHON" xml:lang="it" source="">
+            Che concerne la fonetica, in generale, o il fenomeno della fonazione, o i fonemi in particolare e il loro sistema.
+            </gloss>
+          </item>
+
+          <!--illustration -->
+          <label>
+            <term xml:id="ILL" xml:lang="fr">Illustration</term>
+            <term ref="#ILL" xml:lang="it">Illustrazione</term>
+          </label>
+          <item>
+            <gloss target="#ILL" xml:lang="it" source="https://www.garzantilinguistica.it/ricerca/?q=illustrazione">
+            Descrizione, spiegazione: illustrazione di un progetto, di un concetto.
+            </gloss>
+          </item>
+        </list>
+        <!-- FINE TERMINOLOGIA -->
+
+        <!-- contiene una lista di organizzazioni, in questo caso università -->
+        <listOrg>
+          <org xml:id="UniversitàDiPisa">
+          <orgName ref="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Pisa">University of Pisa</orgName>
+            <placeName ref="Pisa">Pisa</placeName>
+          <desc>
+            L'Università di Pisa è un'Università pubblica situata a Pisa, in Italia.
+          </desc>
+          </org>
+          <org xml:id="UniversitàDiGinevra">
+          <orgName ref="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Ginevra">University of Geneva</orgName>
+            <placeName ref="Pisa">Ginevra</placeName>
+          <desc>
+            L'Università di Ginevra è un'Università pubblica situata a Ginevra, in Svizzera.
+          </desc>
+          </org>
+        </listOrg>
+
+        <!-- contiene una lista di persone -->
+        <listPerson> 
+          <head>Persone</head>
+          <person xml:id="FDS"> 
+            <persName role="author">
+              <forename>Ferdinand</forename>
+              <surname>de Saussure</surname>
+            </persName>
+            <occupation> linguista e semiologo </occupation>
+            <sex>M</sex>
+            <birth>
+              <date when="1857-11-26">26 Novembre 1857</date>
+              <placeName ref="#GN">
+                <settlement type="municipality">Ginevra</settlement>
+                <settlement type="department" key="GN">Ginevra</settlement>
+                <country key="CH">Svizzera</country>
+              </placeName>
+            </birth>
+            <death>
+              <date when="1913-02-22">22 Febbraio 1913</date>
+              <placeName ref="#VlC">
+                <settlement type="municipality">Vufflens-le-Château</settlement>
+                <settlement type="canton" key="Vaud">Vaud</settlement>
+                <country key="CH">Svizzera</country>
+              </placeName>
+            </death> 
+          </person>
+
+          <person xml:id="CLR"> 
+            <persName> 
+              <forename>Clara</forename>
+              <surname>Reynolds</surname>
+            </persName>
+            <sex>F</sex>
+            <birth>
+              <date when="20-05-1999">20th May 1999</date>
+              <placeName ref="#DB">
+                <settlement type="municipality">Dublino</settlement>
+                <settlement type="provincia" key="DB">Dublino</settlement>
+                <country key="IRL">Ireland</country>
+              </placeName>
+            </birth>
+          </person>
+
+          <person xml:id="IAL"> 
+            <persName> 
+              <forename>Isidoro</forename>
+              <surname>Allegretti</surname>
+            </persName>
+            <sex>M</sex>
+            <birth>
+              <date when="16-11-1998">16th November 1998</date>
+              <placeName ref="#BR">
+                <settlement type="municipality">Brindisi</settlement>
+                <settlement type="provincia" key="BR">Brindisi</settlement>
+                <country key="IT">Italy</country>
+              </placeName>
+            </birth>
+          </person>
+
+          <person xml:id="AMDGR"> 
+            <persName> 
+              <forename>Angelo</forename>
+              <forename>Mario</forename>
+              <surname>Del Grosso</surname>
+            </persName>
+            <sex>M</sex>
+            <birth>
+              <date when="1980-02-19">19th February 1980</date>
+              <placeName ref="#Benevento">
+                <settlement type="municipality">Benevento</settlement>
+                <settlement type="provincia" key="BN">Benevento</settlement>
+                <country key="IT">Italy</country>
+              </placeName>
+            </birth>
+          </person>
+
+          <person xml:id="EMF"> 
+            <persName> 
+              <forename>Emanuele</forename>
+              <surname>Fadda</surname>
+            </persName>
+            <sex>M</sex>
+            <birth>
+              <date when="1972">1972</date>
+              <placeName ref="#Cagliari">
+                <settlement type="municipality">Cagliari</settlement>
+                <settlement type="provincia" key="CA">Cagliari</settlement>
+                <country key="IT">Italy</country>
+              </placeName>
+            </birth>
+          </person>
+        </listPerson>
+
+        <!-- contiene una lista di luoghi -->
+        <listPlace>
+          <head>Luoghi</head>
+          <place xml:id="GN">
+            <placeName ref="https://it.wikipedia.org/wiki/Ginevra">Ginevra</placeName>
+            <settlement>Ginevra</settlement>
+            <country>Svizzera</country>
+          </place>
+
+          <place xml:id="Pisa">
+            <placeName ref="https://it.wikipedia.org/wiki/Pisa">Pisa</placeName>
+            <settlement>Toscana</settlement>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="Brindisi">
+            <placeName ref="https://it.wikipedia.org/wiki/Brindisi">Brindisi</placeName>
+            <settlement>Puglia</settlement>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="Dublino">
+            <placeName ref="https://it.wikipedia.org/wiki/Dublino">Dublino</placeName>
+            <settlement>Dublino</settlement>
+            <country>Irlanda</country>
+          </place>
+
+
+          <place xml:id="Benevento">
+            <placeName ref="https://it.wikipedia.org/wiki/Benevento">Benevento</placeName>
+            <settlement>Campania</settlement>
+            <country>Italia</country>
+          </place>
+
+
+          <place xml:id="Cagliari">
+            <placeName ref="https://it.wikipedia.org/wiki/Cagliari">Cagliari</placeName>
+            <settlement>Sardegna</settlement>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="Roma">
+            <placeName ref="https://it.wikipedia.org/wiki/Roma/">Roma</placeName>
+            <settlement>Lazio</settlement>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="Bari">
+            <placeName ref="https://it.wikipedia.org/wiki/Bari/">Bari</placeName>
+            <settlement>Puglia</settlement>
+            <country>Italia</country>
+          </place>
+                
+        </listPlace>
+
+        <!-- contiene un elenco di citazioni bibliografiche -->
+        <listBibl xml:id="morfologia_bibliografia">
+          <head>Bibliografia</head>
+          <bibl xml:id="corsoDiLing" source="https://www.worldcat.org/it/title/1106929198">
+            <author>
+              <persName ref="#FDS">
+                <forename>Ferdinand</forename>
+                <surname>De Saussure</surname>
+              </persName>
+            </author>
+            <author>
+              <persName ref="TDM">
+                <forename>Tullio</forename>
+                <surname>De Mauro</surname>
+              </persName>
+            </author>
+            <title type="main">Corso di linguistica generale</title>
+            <title type="sub">Introduzione, traduzione e commento di Tullio De Mauro</title>
+            <pubPlace>
+              <placeName xml:id="RM">Roma</placeName>
+            </pubPlace>
+            <pubPlace>
+              <placeName xml:id="BA">Bari</placeName>
+            </pubPlace>
+            <date when="1976">1976</date>
+            <publisher>Editori Laterza</publisher>
+
+          </bibl>
+
+          <bibl xml:id="CFS62" xml:lang="french" source="https://www.jstor.org/stable/41427851?seq=1#metadata_info_tab_contents">
+            <author>
+              <persName ref="AC">
+                <forename>Alessandro</forename>
+                <surname>Chidichimo</surname>
+              </persName>
+            </author>
+            <title>Cahiers <persName ref="#FDS">Ferdinand de Saussure</persName></title>
+              <pubPlace ref="#GN">
+                <placeName ref="#GN">Ginevra</placeName>
+              </pubPlace>
+              <publisher>Librairie Droz</publisher>
+              <date when="2009">2009</date>
+          </bibl>
+        </listBibl>
+      </div>
+    </back>
+  </text>
+</TEI>
