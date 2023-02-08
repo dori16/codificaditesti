@@ -8,12 +8,6 @@ I comandi per validare e compilare il progetto:
 
 ## Validazione XML tramite Xerces
 
-```shell
-$ java -cp "_tools/xerces/xml-apis.jar;_tools/xerces/xercesImpl.jar;_tools/xerces/xercesSamples.jar" dom.Counter -v tei_corpus.xml
-```
-
 ## Generazione output HTML a partire da .xsl tramite Saxon
 
-```shell
-$ java -jar _tools/saxon/saxon-he-11.4.jar -s:tei_corpus.xml -xsl:src/progetto.xsl -o:src/index.html
-```
+
